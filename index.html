@@ -4,23 +4,40 @@
     <style type="text/css">
      html, body { height: 100%; margin: 0; padding: 0; }
      #map { height: 100%; }
-   </style>
-  </head>
+    </style>
+  <script type="text/javascript" src="bundle.js"></script></head>
   <body>
     <div id="map"></div>
     <script>
+
       var map;
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), { center: {lat: 40.7413549, lng: -73.9980244}, zoom: 13 });
-        var marker = new google.maps.Marker(
-          { position: {lat: 40.719526, lng: -74.0089934}, map: map, title: 'First Marker!', animation: google.maps.Animation.DROP, id: 1 }
-        )
+
+        map = new google.maps.Map(document.getElementById('map'), { center: {lat: 45.519521, lng: -122.677410}, zoom: 13 });
+        var locations = [
+          {title: 'Ballroom Dance Company', location: {lat: 45.430483, lng: -122.769038}},
+          {title: 'Back to Eden Bakery', location: {lat: 45.559352, lng: -122.641800}},
+          {title: 'Pad Thai Kitchen', location: {lat: 45.516817, lng: -122.641514}},
+          {title: 'Robert Hauk Tango', location: {lat: 45.516167, lng: -122.657300}}
+ 
+        ];
+
+        for (var i = 0; i < locations.length; i++) {
+          var position = locations[i].location;
+          var title = locations[i].title;
+          var marker = new google.maps.Marker({
+            map: map,
+            position: position,
+            title: title,
+            animation: google.maps.Animation.DROP,
+            id: i
+          });
+          markers.push(marker);
+        }
+
       }
     </script>
-    <script>
-      const url = `https://maps.googleapis.com/maps/api/js?key=&v=3&callback=initMap`
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuLrjInAtrOY-WxL0dVHE9ebV9vsQbaeA&callback=initMap"></script>
 
-    <script async defer src=url></script>
-  <script type="text/javascript" src="bundle.js"></script></body>
+  </body>
 </html>
