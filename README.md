@@ -36,6 +36,14 @@ Git (optional but recommended)
 4. Build the application with the command `npm run build`
 5. Start the application with the command `npm run start`
 
+## Running Automated Tests
+
+tests are under __tests__
+
+```
+npm run test
+```
+
 ## Deployment
 
 Run the command 'npm run built' and deploy the files 'index.html' and 'bundle.js' in the root directory
