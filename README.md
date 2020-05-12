@@ -36,17 +36,9 @@ Git (optional but recommended)
 4. Build the application with the command `npm run build`
 5. Start the application with the command `npm run start`
 
-## Running Automated Tests
-
-how to run the automated tests
-
-```
-example
-```
-
 ## Deployment
 
-
+Run the command 'npm run built' and deploy the files 'index.html' and 'bundle.js' in the root directory
 
 ## Technologies Used
 
@@ -63,3 +55,4 @@ Winter Runion
 
 ## Acknowledgments
 
+https://www.learnhowtoprogram.com/fidgetech-2-intermediate-javascript/2-3-asynchrony-and-apis/2-3-3-1-dino-ipsum-bike-index-google-maps
