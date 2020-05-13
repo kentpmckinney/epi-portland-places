@@ -10,7 +10,7 @@
     "test": "npm run build; jest"
   },
   "keywords": [],
-  "author": "Kent P. McKinney",
+  "author": "Kent P. McKinney, Winter Runion",
   "license": "",
   "devDependencies": {
     "@babel/core": "^7.6.4",

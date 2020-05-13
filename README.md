@@ -53,6 +53,7 @@ Run the command 'npm run built' and deploy the files 'index.html' and 'bundle.js
 * JavaScript
 * HTML
 * CSS
+* Google API
 
 ## Authors
 
