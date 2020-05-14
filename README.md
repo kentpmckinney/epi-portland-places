@@ -38,10 +38,10 @@ Git (optional but recommended)
 
 ## Running Automated Tests
 
-tests are under __tests__
+tests are under ``src/__tests__``
 
 ```
-npm run test
+Run the command 'npm run test'
 ```
 
 ## Deployment
