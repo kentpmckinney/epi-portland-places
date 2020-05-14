@@ -50,3 +50,55 @@ $(document).ready(function () {
   script.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?v=3&callback=initMap');
   $('body').append(script);
 });
+
+/*
+
+	$('#maps-button').click(function() {
+		$('#map').show();
+		if (!mapCreated) {
+			let script = document.createElement('script');
+			script.innerHTML = `
+				function initMap() {
+					map = new google.maps.Map(document.getElementById('map'),
+					{ center: {lat: 45.519521, lng: -122.677410}, zoom: 13 });
+					let locations = [];
+					locations.push({title: 'Epicodus', location: {lat: 45.520712, lng: -122.677377}});
+					for (let i = 0; i < locations.length; i++) {
+						let position = locations[i].location;
+						let title = locations[i].title;
+						let marker = new google.maps.Marker({
+							map: map,
+							position: position,
+							title: title,
+							animation: google.maps.Animation.DROP,
+							id: i
+						});
+					}
+				}`;
+			script.type = 'text/javascript';
+			$('body').append(script);
+			script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.setAttribute('src', `https://maps.googleapis.com/maps/api/js?key=${mapsKey}&callback=initMap`);
+			$('body').append(script);
+			mapCreated = true;
+		}
+		else {
+			let locations = [];
+			locations.push({title: 'Epicodus', location: {lat: 45.520712, lng: -122.677377}});
+			locations.push({title: `The Best Starbucks Ever`, location: {lat: 45.520690, lng: -122.678031}});
+			for (let i = 0; i < locations.length; i++) {
+					let position = locations[i].location;
+					let title = locations[i].title;
+					let marker = new google.maps.Marker({
+							map: map,
+							position: position,
+							title: title,
+							animation: google.maps.Animation.DROP,
+							id: i
+					});
+			}
+		}
+	});
+
+*/
